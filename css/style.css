@@ -1,0 +1,34 @@
+
+body {
+  background-color: deepskyblue;
+}
+
+.container-fluid {
+  background-color: aliceblue;
+  margin: 20%;
+  padding: 5%;
+}
+
+q {
+  font-size: 1.3em;
+  font-family: Indie Flower;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Poppins;
+}
+
+
+blockquote {
+  padding: 6px 16px;
+  border: none;
+  quotes: "\201C" "\201D";
+  display: inline-block;
+  line-height: 1.45;
+}
+
+button {
+  background-color: deepskyblue;
+  text-decoration-color: aliceblue;
+}
