@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random Quote Generator</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Indie+Flower|Poppins" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Poppins" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">
         function randomQuote() {
           $.ajax({
-            url: "http://api.forismatic.com/api/1.0/?",
+            url: "https://api.forismatic.com/api/1.0/?",
             dataType: "jsonp",
             data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
             success: function( response ) {
               $("#random_quote").html("<blockquote id=random_quote><q>" +
                 response.quoteText + "</blockquote><footer><cite>" + response.quoteAuthor + "</cite></footer>");
-              $("#tweet").attr("href", "http://twitter.com/home/?status=" + response.quoteText +
+              $("#tweet").attr("href", "https://twitter.com/home/?status=" + response.quoteText +
                 ' (' + response.quoteAuthor + ')');
             }
           });
